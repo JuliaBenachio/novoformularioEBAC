@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css" />
+    <title>Formulário de pretenção salarial</title>
+</head>
+<header>
+    <h1>Formulário de pretenção salarial</h1>
+</header>
+<body>
+    <div class="container">
+        <h2>Digite o quanto você já ganha e abaixo o quanto pretende ganhar:</h2>
+        <form id="form-comparacao">
+            <input type="number" id="salario-base" required placeholder="Salário Atual" />
+            <input type="number" id="salario-pretencao" required placeholder="Pretenção de Salário" />
+            <button type="submit">Comparar</button>
+        </form>
+        <span id="salario-valido">Este valor é válido para salário</span>
+        <span id="erro">A pretenção precisa ser maior que o salário atual</span>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

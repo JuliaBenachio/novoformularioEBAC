@@ -8,7 +8,7 @@ function comparaSalario (salarioPretencao, salarioBase) {
     return salarioPretencao > salarioBase;
 }
 
-form.addEventListerner ('submit', function (e) {
+form.addEventListener ('submit', function (e) {
     e.preventDefault();
 
     let formValido = comparaSalario(salarioPretencao.valueAsNumber, salarioBase.valueAsNumber);
